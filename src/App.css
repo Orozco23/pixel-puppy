@@ -56,6 +56,113 @@
   background-position: bottom left;
 }
 
+/* Clouds */
+.cloud-1 {
+  position: absolute;
+  top: 4vw;
+  left: 3vw;
+  width: 14vw;
+  max-width: 182px;
+  height: auto;
+}
+
+.cloud-2 {
+  position: absolute;
+  top: -2vw;
+  left: 39vw;
+  width: 10vw;
+  max-width: 130px;
+  height: auto;
+}
+
+.cloud-3 {
+  position: absolute;
+  top: 2vw;
+  left: 65vw;
+  width: 13vw;
+  max-width: 170px;
+  height: auto;
+}
+
+.cloud-4 {
+  position: absolute;
+  top: 3vw;
+  left: 84vw;
+  width: 10vw;
+  max-width: 125px;
+  height: auto;
+}
+
+.cloud-5 {
+  position: absolute;
+  top: 16vw;
+  left: 7vw;
+  width: 17vw;
+  max-width: 217px;
+  height: auto;
+}
+
+.cloud-6 {
+  position: absolute;
+  top: 9vw;
+  left: 21vw;
+  width: 13vw;
+  max-width: 170px;
+  height: auto;
+}
+
+.cloud-7 {
+  position: absolute;
+  top: 8vw;
+  left: 78vw;
+  width: 14vw;
+  max-width: 187px;
+  height: auto;
+}
+
+.cloud-8 {
+  position: absolute;
+  top: 14vw;
+  left: 65vw;
+  width: 17vw;
+  max-width: 217px;
+  height: auto;
+}
+
+/* Animation for clouds moving to the left */
+@keyframes cloud-move-to-left {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(-15vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+.cloud-2, .cloud-4, .cloud-5, .cloud-6,  .cloud-7 {
+  animation: cloud-move-to-left 30s linear infinite;
+}
+
+/* Animation for clouds moving to the right */
+@keyframes cloud-move-to-right {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+.cloud-1, .cloud-3,.cloud-8 {
+  animation: cloud-move-to-right 30s linear infinite;
+}
+
 .card {
   display: flex;
   width: 32.5rem;
