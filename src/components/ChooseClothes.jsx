@@ -5,8 +5,18 @@ import frogHat from '../assets/clothes/hats/frog-hat.png';
 import blueHat from '../assets/clothes/hats/blue-hat.png';
 import bowknot from '../assets/clothes/hats/bowknot.png';
 
+/*shirts*/
+import green from '../assets/clothes/shirts/green.png';
+import blue from '../assets/clothes/shirts/blue.png';
+import purple from '../assets/clothes/shirts/purple.png';
+
+/*accessories*/
+import flower from '../assets/clothes/accessories/flower.png';
+import sunflower from '../assets/clothes/accessories/sunflower.png';
+import gift from '../assets/clothes/accessories/gift.png';
+
 export default function ChooseClothes() {
-    const [selected, setSelected] = useState(null);
+    const [selected, setSelected] = useState(2);
     return (
         <div className="clothes">
             <button
