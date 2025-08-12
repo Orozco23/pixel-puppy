@@ -13,6 +13,7 @@ function createWindow() {
     titleBarStyle: 'hidden',
     frame: false,
     resizable: false,
+    icon: join(__dirname, 'assets', 'icon.png'),
     webPreferences: {
       preload: join(__dirname, 'preload.js'),
       nodeIntegration: false,
