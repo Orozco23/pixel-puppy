@@ -342,6 +342,18 @@
   }
 }
 
+.left-arrow:hover, .right-arrow:hover {
+  border-color: none;
+}
+
+.left-arrow:focus,
+.left-arrow:focus-visible,
+.right-arrow:focus,
+.right-arrow:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 @media (max-width: 900px) {
   .card {
     width: 60vw;
