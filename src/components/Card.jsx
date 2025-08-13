@@ -5,7 +5,7 @@ import ChooseClothes from './ChooseClothes';
 import ChooseColor from './ChooseColor';
 import Outfit from './Outfit';
 
-export default function Card () {
+export default function Card ({ handlePrevColor, handleNextColor, color }) {
     const [selectedOption, setSelectedOption] = useState(0)
 
     /*selected clothes*/
@@ -18,7 +18,9 @@ export default function Card () {
             <div className="card-content">
                 <p>what should I wear today?</p>
                 
-                <div className="card-background">
+                <div className="card-background"
+                    style={{ backgroundColor: color }}
+                >
                     <Outfit
                         hat={selectedHat}
                         shirt={selectedShirt}
@@ -26,7 +28,10 @@ export default function Card () {
                     />
                 </div>
 
-                <ChooseColor/>
+                <ChooseColor
+                    onPrev={handlePrevColor}
+                    onNext={handleNextColor}
+                />
 
                 <Options
                     selected={selectedOption}
