@@ -70,6 +70,25 @@
   background-position: bottom left;
   margin-bottom: 8.8vh;
 }
+
+/*Outfit*/
+.outfit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.outfit img {
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    width: 95%;
+    height: auto;
+}
+
 /* Clouds */
 .cloud-1 {
   position: absolute;
@@ -326,24 +345,35 @@
 @media (max-width: 900px) {
   .card {
     width: 60vw;
-    height: 69vh;
+    height: 78vh;
     min-width: 0;
     min-height: 0;
     padding: 1rem;
   }
   .card-content {
     width: 55vw;
-    height: 64vh;
+    height: 73vh;
   }
   p {
     font-size: 1.5rem;
+  }
+  .outfit {
+    width: 100%;
+    height: 90%;
+  }
+  .outfit img {
+    left: 5%;
+    width: 90%;
+  }
+  .right-arrow, .left-arrow {
+    width: 6vw;
   }
 }
 
 @media (max-width: 600px) {
   .card {
     width: 85vw;
-    height: 59vh;
+    height: 68vh;
     min-width: 0;
     min-height: 0;
     padding: 0.5rem;
@@ -351,10 +381,18 @@
   }
   .card-content {
     width: 80vw;
-    height: 54vh;
+    height: 63vh;
     border-radius: 16px;
   }
-  p {
-    font-size: 0.6em;
+  .outfit {
+    width: 100%;
+    height: 80%;
+  }
+  .outfit img {
+    left: 7%;
+    width: 86%;
+  }
+  .right-arrow, .left-arrow {
+    width: 11vw;
   }
 }
