@@ -1,4 +1,4 @@
-import arrow from '../assets/arrow.png';
+import arrow from '../assets/background/arrow.png';
 
 export default function ChooseColor() {
     return (
