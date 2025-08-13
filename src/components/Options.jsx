@@ -2,14 +2,13 @@ import hat from '../assets/options/hat.png';
 import tShirt from '../assets/options/t-shirt.png';
 import flower from '../assets/options/flower.png';
 
+const options = [
+    { img: hat, alt: "Hat" },
+    { img: tShirt, alt: "T-Shirt" },
+    { img: flower, alt: "Flower" }
+]
+
 export default function Options ({ selected, setSelected }) {
-
-    const options = [
-        { img: hat, alt: "Hat" },
-        { img: tShirt, alt: "T-Shirt" },
-        { img: flower, alt: "Flower" }
-    ]
-
     return (
         <div className="options">
             {options.map((option, i) => (

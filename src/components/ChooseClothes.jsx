@@ -13,17 +13,17 @@ import flower from '../assets/clothes/accessories/flower.png';
 import sunflower from '../assets/clothes/accessories/sunflower.png';
 import gift from '../assets/clothes/accessories/gift.png';
 
+/*all clothes options*/
+const clothesOptions = [
+        [ frogHat, blueHat, bowknot ],  //hats
+        [ green, blue, purple ],   //shirts
+        [ flower, sunflower, gift ]    //accessories
+    ]
+
 export default function ChooseClothes ({ selectedOption, hat, setHat, shirt, setShirt, accessory, setAccessory }) {
     /*arrays for getter and setter of selected clothes*/
     const selectedValues = [hat, shirt, accessory]
     const setSelected = [setHat, setShirt, setAccessory]
-
-    /*all clothes options*/
-    const clothesOptions = [
-            [ frogHat, blueHat, bowknot ],  //hats
-            [ green, blue, purple ],   //shirts
-            [ flower, sunflower, gift ]    //accessories
-        ]
 
     /*get current group and selection*/
     /*group of clothes based on selected option*/

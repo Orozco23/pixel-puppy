@@ -1,5 +1,6 @@
-import { useState } from 'react';import Options from './Options';
+import { useState } from 'react';
 
+import Options from './Options';
 import ChooseClothes from './ChooseClothes';
 import ChooseColor from './ChooseColor';
 import Outfit from './Outfit';

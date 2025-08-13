@@ -6,9 +6,9 @@ import image5 from '../assets/background/cloud-5.png';
 import image6 from '../assets/background/cloud-6.png';
 import image7 from '../assets/background/cloud-7.png';
 
-export default function Cloud ({ number }) {
+const images = [image1, image2, image3, image4, image5, image6, image7, image5];
 
-    const images = [image1, image2, image3, image4, image5, image6, image7, image5];
+export default function Cloud ({ number }) {
     return (
         <img src={images[number]} alt="Cloud" className={`cloud-${number + 1}`} />
     )
