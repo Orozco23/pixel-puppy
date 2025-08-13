@@ -1,31 +1,26 @@
-import { useState } from 'react';
 import hat from '../assets/options/hat.png';
 import tShirt from '../assets/options/t-shirt.png';
 import flower from '../assets/options/flower.png';
 
-export default function Options () {
-    const [selected, setSelected] = useState(null)
+export default function Options ({ selected, setSelected }) {
+
+    const options = [
+        { img: hat, alt: "Hat" },
+        { img: tShirt, alt: "T-Shirt" },
+        { img: flower, alt: "Flower" }
+    ]
 
     return (
         <div className="options">
-            <button
-                className={selected === 1 ? "selected" : ""}
-                onClick={() => setSelected(1)}
-            >
-                <img src={hat} alt="Hat" />
-            </button>
-            <button
-                className={selected === 2 ? "selected" : ""}
-                onClick={() => setSelected(2)}
-            >
-                <img src={tShirt} alt="T-Shirt" />
-            </button>
-            <button
-                className={selected === 3 ? "selected" : ""}
-                onClick={() => setSelected(3)}
-            >
-                <img src={flower} alt="Flower" />
-            </button>
+            {options.map((option, i) => (
+                <button
+                    key={i}
+                    className={selected === i ? "selected" : ""}
+                    onClick={() => setSelected(i)}
+                >
+                    <img src={option.img} alt={option.alt} />
+                </button>
+            ))}
         </div>
     )
 }
