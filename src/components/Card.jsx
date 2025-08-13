@@ -18,7 +18,11 @@ export default function Card () {
                 <p>what should I wear today?</p>
                 
                 <div className="card-background">
-                    <Outfit/>
+                    <Outfit
+                        hat={selectedHat}
+                        shirt={selectedShirt}
+                        accessory={selectedAccessory}
+                    />
                 </div>
 
                 <ChooseColor/>
