@@ -45,7 +45,6 @@
 .background {
   width: 100%;
   height: 100%;
-  background: #80C9CA;
   position: absolute;
   top: 0;
   left: 0;
@@ -54,6 +53,7 @@
   background-repeat: repeat-x;
   background-position: 0 100%;
   background-position: bottom left;
+  transition: background-color 800ms ease-out;
 }
 
 .card-background {
@@ -63,12 +63,12 @@
   z-index: 0;
   width: 100%;
   height: 75%;
-  background: #80C9CA;
   background-image: url('./assets/background/background.png');
   background-size: 100% auto;
   background-repeat: repeat-x;
   background-position: bottom left;
   margin-bottom: 8.8vh;
+  transition: background-color 800ms ease-out;
 }
 
 /*Outfit*/
@@ -340,6 +340,18 @@
     height: auto;
     cursor: pointer;
   }
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  border-color: none;
+}
+
+.left-arrow:focus,
+.left-arrow:focus-visible,
+.right-arrow:focus,
+.right-arrow:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 @media (max-width: 900px) {
